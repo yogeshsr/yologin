@@ -1,5 +1,5 @@
 ## Readme
-yologin will ssh to all the boxes found. Input can be host prefix like p-some-service-app or p-some-service-app-01. The prefix will be matched in ~/.yo_config ex p-some-service-app-01, p-some-service-app-02 etc and itermocil will be used to create ssh sessions.
+`yologin` will ssh to all the boxes found. Input can be host prefix like p-some-service-app or p-some-service-app-01. The prefix will be matched in ~/.yo_config ex p-some-service-app-01, p-some-service-app-02 etc and itermocil will be used to create ssh sessions.
 
 Pre-request
 - brew install itermocil
@@ -10,10 +10,6 @@ Add the below function to bash/zsh profile.
 
 Update `yologin_base_dir` to the dir that contains `gen_layout.rb` (Dir which this repo is cloned)
 
-To run
-
-	yologin p-some-host-01
-
 ```
 function yologin() {
 	search_host=$1
@@ -23,3 +19,7 @@ function yologin() {
 
 }
 ```
+To run
+
+	yologin p-some-host-01
+
